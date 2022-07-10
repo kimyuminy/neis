@@ -10,7 +10,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 const neis = require("../src/neis");
 
-neis.createSchool(neis.REGION.BUSAN, 'C100000394', neis.TYPE.HIGH).getDiary(2, 2020).then(list => {
+neis.createSchool(neis.REGION.SEOUL, 'B100000581', neis.TYPE.HIGH).getDiary(2, 2020).then(list => {
 	for (let day of Object.keys(list)) {
 		console.log(`2/${day}: ${list[day].join(", ")}`);
 	}

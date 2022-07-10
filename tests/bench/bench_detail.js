@@ -2,7 +2,7 @@
 const test_cnt = 10;
 
 const neis = require("../../src/neis"),
-	school_neis = neis.createSchool(neis.REGION.BUSAN, "C100000394", neis.TYPE.HIGH);
+	school_neis = neis.createSchool(neis.REGION.SEOUL, "B100000581", neis.TYPE.HIGH);
 
 const detail_neis = async () => {
 	let startTime = Date.now();

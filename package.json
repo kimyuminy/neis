@@ -32,7 +32,8 @@
     "test": "node tests/test.js"
   },
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "neis": "^0.5.1"
   },
   "directories": {
     "lib": "src",
