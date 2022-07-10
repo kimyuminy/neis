@@ -10,7 +10,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 const neis = require("../src/neis");
 
-neis.searchSchool('동래', neis.REGION.BUSAN).then(d => {
+neis.searchSchool('강남', neis.REGION.SEOUL).then(d => {
 	d.forEach(school => {
 		console.log("학교 명: " +
 			school.name + "\n학교 코드 : " + school.code +
