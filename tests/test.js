@@ -1,5 +1,5 @@
 const neis = require("../src/neis");
-const school = neis.createSchool(neis.REGION.BUSAN, "C100000394", neis.TYPE.HIGH);
+const school = neis.createSchool(neis.REGION.SEOUL, "B100000581", neis.TYPE.HIGH);
 
 const sc_detail = require("../src/class/school/SchoolDetail");
 const sc_search = require("../src/class/school/SchoolSearched");
@@ -10,7 +10,7 @@ let success = true;
 const test = async () => {
 	
 	console.log("검색 기능 테스트 중...");
-	await neis.searchSchool("동래고등학교").then(d => {
+	await neis.searchSchool("단국대학교부속소프트웨어고등학교").then(d => {
 		d.forEach((sc, i) => {
 			if (!sc instanceof sc_search) {
 				console.log(`Error: 학교 객체가 SchoolSearched.js 가 아닙니다. Key: ${i}`);

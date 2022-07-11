@@ -6,7 +6,7 @@ const neis = require("../../src/neis");
 const search_neis = async () => {
 	let startTime = Date.now();
 	for (let i = 1; i <= test_cnt; i++) {
-		await neis.searchSchool("동래", 'ALL', true);
+		await neis.searchSchool("강남", 'ALL', true);
 	}
 	let endTime = Date.now();
 	
